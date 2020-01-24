@@ -1,0 +1,49 @@
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <!-- Brand/logo -->
+    <a class="navbar-brand" href="/students">Home</a>
+    
+    <!-- Links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="/students">Students</a>
+      </li>
+    </ul>
+    </nav>
+    <div class="container-fluid">
+      <div class="jumbotron">
+        <div class="text-center"> 
+          <h3>Books..</h3>
+      </div>
+        
+        <table class="table table-striped table-dark">
+          <thead>
+            <tr>
+              <th>Book</th>
+              <th>Author</th>
+              <th>Department</th>
+              <th>Publication</th>
+              <th>No of books</th>
+              
+            </tr>
+          </thead>
+          <tbody >
+            <tr *ngFor="let b of books">
+            <td>{{b.book}}</td>
+            <td>{{b.author}}</td>
+            <td>{{b.department}}</td>
+            <td>{{b.publication}}</td>
+            <td>{{b.totalbook}}</td>
+                <button type="button" class="btn btn-danger" style='margin-left:16px; margin-top:10px;margin-top:8px' (click)="deleteBook(b)">Delete</button>
+                <button type="button" class="btn btn-success" style='margin-left:16px;margin-top:10px;margin-top:8px' (click)="update_Book(b)">Update</button>
+            </tr>
+          </tbody>
+        </table>
+        <div class="text-center"> 
+          <a href="/addbook"><button type="button" class="btn btn-primary">Add new books details</button></a>
+      </div>
+        
+    </div>
+    </div>
+    
+     
+    

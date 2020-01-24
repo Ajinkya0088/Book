@@ -1,0 +1,28 @@
+
+  <div class="container">
+    <div class="jumbotron">
+      <div class="text-center"> 
+        <h3><b>Sign Up</b></h3>
+    </div>
+      <form action="" class="was-validated">
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter password" name="email" [(ngModel)]="users.email"  required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+          </div>
+        <div class="form-group">
+          <label for="pwd">Password:</label>
+          <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" [(ngModel)]="users.password"  required>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <div class="text-center"> 
+          <button type="button" class="btn btn-primary" (click)="register()">Register</button>
+      </div><br>
+      <div class="text-center"> 
+        <a href="/login"><p>Already have Account??<br>Sign In</p></a>
+    </div>
+      </form>
+    </div>
+    </div>

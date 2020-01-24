@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <!-- Brand/logo -->
+    <a class="navbar-brand" href="/students">Home</a>
+    
+    <!-- Links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="/students">student</a>
+      </li>
+    </ul>
+    </nav>
+<div class="container">
+<div class="jumbotron">
+  <div class="text-center"> 
+    <h3>Add details here</h3>
+    </div>
+    <b>Name</b><hr><input type="text" [(ngModel)]="students.name" placeholder="Enter student name" class="form-control form-rounded" />
+    <b>Book</b><hr><input type="text" [(ngModel)]="students.book" placeholder="Enter book name" class="form-control form-rounded"/>
+    <b>Standard</b><hr><input type="text" [(ngModel)]="students.standard" placeholder="Enter standard"class="form-control form-rounded"/>
+    <b>Division</b><hr><input type="text" [(ngModel)]="students.division" placeholder="Enter division"class="form-control form-rounded"/>
+    <b>Days</b><hr><input type="text" [(ngModel)]="students.days" placeholder="Enter no of days"class="form-control form-rounded"/>
+    <div class="text-center"> 
+        <button type="button" class="btn btn-primary" (click)="add()" style='margin-top:16px'>Submit</button>
+    </div>
+</div>
+</div>
